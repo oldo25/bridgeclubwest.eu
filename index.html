@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bridge Club West</title>
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --fg: #1a1a1a;
+    --muted: #6b6b6b;
+    --accent: #c4623d;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16151a;
+      --fg: #eceaea;
+      --muted: #9a9799;
+      --accent: #e08a63;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+  }
+  /* The host injects its own banners as siblings of <main>, so the centring
+     lives on this wrapper rather than on <body>. */
+  .wrap {
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 24px;
+  }
+  main { max-width: 32rem; text-align: center; }
+  h1 {
+    margin: 0 0 0.5rem;
+    font-size: clamp(2rem, 8vw, 3.25rem);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+  h1 span { color: var(--accent); }
+  p { margin: 0; color: var(--muted); }
+  .rule {
+    width: 3rem;
+    height: 2px;
+    margin: 1.75rem auto 0;
+    background: var(--accent);
+    opacity: 0.5;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <main>
+      <h1>Hello, <span>world</span></h1>
+      <p>This site is up and running. More to come soon.</p>
+      <div class="rule"></div>
+    </main>
+  </div>
+</body>
+</html>
