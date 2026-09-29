@@ -1,0 +1,20 @@
+# Slovak UI strings. An English version will live next to this file as en.yaml
+# with the same keys.
+
+site:
+  name: Bridge Club West
+  description: Bridžový klub West
+
+nav:
+  label: Hlavné menu
+  items:
+    - label: Domov
+      url: /
+    - label: O klube
+      url: /o-klube/
+    - label: Členovia
+      url: /clenovia/
+    - label: Linky
+      url: /linky/
+
+skip_to_content: Prejsť na obsah
